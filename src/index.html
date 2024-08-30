@@ -4,8 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News-api</title>
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  
+  <form class="search-form">
+    <input class="search-input" type="text" name="query" id="query" placeholder="Search...">
+    <button type="submit" class="button button-search">Search</button>
+  </form>
+
+  <ul class="articles-container"></ul>
+
+  <button type="button" class="button load-button">
+    <span class="load-button-label">Load More</span>
+    <span class="loader" role="status"></span>
+  </button>
+
+  <template class="template">
+    <li class="element">
+      <a href="" class="article-link">
+        <article class="article">
+          <img class="article-img" src="" alt="" width="480">
+          <h2 class="article-header"></h2>
+          <p class="article-author"></p>
+          <p class="article-desc"></p>
+        </article>
+      </a>
+    </li>
+  </template>
+
+
+  <script src="./index.js" type="module"></script>
 </body>
 </html>
